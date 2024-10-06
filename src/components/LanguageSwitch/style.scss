@@ -1,0 +1,48 @@
+.language-main {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color: black;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.language-menu {
+  width: 100px;
+  text-align: center;
+  appearance: none;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  transition: all 0.3s ease;
+
+  &:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+
+  &:disabled {
+    color: red;
+    border-bottom: 2px solid red;
+    cursor: not-allowed;
+  }
+}
+
+.language-menu ::-ms-expand {
+  display: none; /* Internet Explorer ve eski Edge */
+}
+
+option {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  background: none;
+  border: none;
+  transition: all 0.3s ease;
+}

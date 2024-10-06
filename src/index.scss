@@ -1,0 +1,13 @@
+@import url("./reset.scss");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Protest+Strike&display=swap");
+
+:root {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
+}

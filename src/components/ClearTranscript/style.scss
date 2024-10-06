@@ -1,0 +1,33 @@
+@mixin button-styles {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px #000000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.clear-button {
+  @include button-styles;
+
+  &:active {
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+}
+
+.clear-button-disabled {
+  @include button-styles;
+  cursor: not-allowed;
+  background-color: red;
+  color: #ccc;
+  box-shadow: none;
+}

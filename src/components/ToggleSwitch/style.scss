@@ -1,0 +1,52 @@
+.container {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 30px;
+  user-select: none;
+  fill: rgb(255, 255, 255);
+}
+
+.container .microphone-slash {
+  position: absolute;
+  animation: keyframes-fill 0.5s;
+}
+
+.container .microphone {
+  position: absolute;
+  display: none;
+  animation: keyframes-fill 0.5s;
+}
+
+.container input:checked ~ .microphone-slash {
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .microphone {
+  position: absolute;
+  display: block;
+  fill: rgb(98, 255, 0);
+}
+
+.container input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* ------ Animation ------ */
+@keyframes keyframes-fill {
+  0% {
+    transform: rotate(0deg) scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(-10deg) scale(1.2);
+  }
+}
